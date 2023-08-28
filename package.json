@@ -1,0 +1,22 @@
+{
+  "name": "◢●",
+  "version": "0.0.1",
+  "description": "Two shapes.",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/index.html --out-dir docs",
+    "build": "prettier --write src && parcel build src/index.html --no-optimize --dist-dir docs --public-url https://twoshapes.evnp.sh",
+    "reset": "rm -rf ./node_modules && rm -rf ./.parcel-cache && npm install"
+  },
+  "author": "Evan Purcer <mail@evnp.sh> (https://evnp.sh)",
+  "dependencies": {
+    "L": "github:evnp/L"
+  },
+  "devDependencies": {
+    "parcel": "2.9.3",
+    "prettier": "3.0.2",
+    "stylus": "0.59.0",
+    "typescript": "5.2.2"
+  }
+}
